@@ -1,0 +1,27 @@
+<div>
+  <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px' }"></ngx-loading>
+  <div class="card">
+    <div class="card-header">
+      <h4 class="card-title">Books</h4>
+    </div>
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th></th>
+        </thead>
+        <tbody>
+        <tr *ngFor="let book of books">
+          <td>{{book.isbn}}</td>
+          <td>{{book.title}}</td>
+          <td>{{book.title}}≈</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card-footer">
+    </div>
+  </div>
+</div>
